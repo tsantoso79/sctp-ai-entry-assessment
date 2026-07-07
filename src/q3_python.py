@@ -7,8 +7,9 @@
 # Example: formatName("John", "Smith") → "Smith, John"
 
 def formatName(firstName, lastName):
-    # Add your code here
-    pass
+    formatted_first = firstName.title()
+    formatted_last = lastName.title()
+    return f"{formatted_last}, {formatted_first}"
 
 
 # Task 2:
@@ -19,8 +20,10 @@ def formatName(firstName, lastName):
 # and always produce properly capitalised output.
 
 def formatInitials(firstName, lastName):
-    # Add your code here
-    pass
+    # Use only the first character from each name and normalize it to uppercase.
+    first_initial = firstName[0].upper()
+    last_initial = lastName[0].upper()
+    return f"{first_initial}.{last_initial}."
 
 
 # Task 3:
@@ -30,4 +33,8 @@ def formatInitials(firstName, lastName):
 #   formatInitials("Alice","Tan") → Expected: "A.T."
 #   formatInitials("bob","lim")   → Expected: "B.L."
 
-# Add your code here
+if __name__ == "__main__":
+    print(formatName("Alice", "Tan"))
+    print(formatName("bob", "lim"))
+    print(formatInitials("Alice", "Tan"))
+    print(formatInitials("bob", "lim"))
