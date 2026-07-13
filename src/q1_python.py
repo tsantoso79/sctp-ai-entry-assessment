@@ -13,6 +13,16 @@
 #   - Round the result to 2 decimal places before returning
 
 def convertTemp(value, unit):
+    """Convert a temperature between Celsius and Fahrenheit.
+
+    Args:
+        value: the numeric temperature to convert.
+        unit: "C" to treat value as Celsius, "F" to treat it as Fahrenheit.
+
+    Returns:
+        The converted temperature rounded to 2 decimals, or -1 for an
+        unrecognised unit.
+    """
     if unit == "C":
         # Celsius to Fahrenheit.
         result = (value * 9 / 5) + 32

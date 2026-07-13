@@ -22,13 +22,11 @@ Individuals looking to upskill or make a career switch into AI and software engi
 
 ## Language Choice
 
-You may complete all questions in **any one** of the following programming languages:
+You may complete all questions in **any one** of Python, JavaScript, or Java.
 
-- Python → use the `*_python.py` files
-- JavaScript → use the `*_javascript.js` files
-- Java → use the `*_java.java` files
-
-Choose the language you are most comfortable with and use it consistently throughout.
+**These solutions are written in Python** (`*_python.py` files in `src/`). The
+JavaScript and Java template files have been removed to keep the submission
+focused on a single language.
 
 ---
 
@@ -36,13 +34,27 @@ Choose the language you are most comfortable with and use it consistently throug
 
 Please attempt to solve the problems in the following files inside the `src/` folder:
 
-| Question | Topic | Files |
-|----------|-------|-------|
-| [Question 1](src/q1_python.py) | Functions & Conditionals | `q1_python.py` / `q1_javascript.js` / `Q1_java.java` |
-| [Question 2](src/q2_python.py) | Arrays & Loops | `q2_python.py` / `q2_javascript.js` / `Q2_java.java` |
-| [Question 3](src/q3_python.py) | String Manipulation | `q3_python.py` / `q3_javascript.js` / `Q3_java.java` |
+| Question | Topic | File |
+|----------|-------|------|
+| [Question 1](src/q1_python.py) | Functions & Conditionals | `q1_python.py` |
+| [Question 2](src/q2_python.py) | Arrays & Loops | `q2_python.py` |
+| [Question 3](src/q3_python.py) | String Manipulation | `q3_python.py` |
 
 Your code should be readable and include brief comments where helpful to explain your logic.
+
+## Running the solutions
+
+```
+python src/q1_python.py
+python src/q2_python.py
+python src/q3_python.py
+```
+
+A unit-test suite is included:
+
+```
+python tests/test_python_solutions.py -v
+```
 
 ---
 

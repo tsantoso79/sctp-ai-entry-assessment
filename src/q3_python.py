@@ -7,6 +7,7 @@
 # Example: formatName("John", "Smith") → "Smith, John"
 
 def formatName(firstName, lastName):
+    """Return the name as "LastName, FirstName", title-casing each part."""
     formatted_first = firstName.title()
     formatted_last = lastName.title()
     return f"{formatted_last}, {formatted_first}"
@@ -20,9 +21,11 @@ def formatName(firstName, lastName):
 # and always produce properly capitalised output.
 
 def formatInitials(firstName, lastName):
+    """Return uppercase initials like "J.S." regardless of input casing."""
     # Use only the first character from each name and normalize it to uppercase.
-    first_initial = firstName[0].upper()
-    last_initial = lastName[0].upper()
+    # Guard against empty strings so indexing [0] can never raise IndexError.
+    first_initial = firstName[0].upper() if firstName else ""
+    last_initial = lastName[0].upper() if lastName else ""
     return f"{first_initial}.{last_initial}."
 
 
